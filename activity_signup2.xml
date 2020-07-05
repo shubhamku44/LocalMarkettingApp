@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/girl2"
+    tools:context=".Signup2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account/Merchant"
+        android:id="@+id/header"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtname"
+        android:background="@drawable/btn1"
+        android:layout_below="@id/header"
+        android:layout_marginTop="30dp"
+        android:hint="  Enter Userid"/>
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtname"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn1"
+        android:hint="  Enter Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpass"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/btn1"
+        android:hint="  Enter address" />
+
+    <EditText
+        android:id="@+id/txtshopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtadd"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn1"
+        android:hint="  Enter The shop name/no" />
+
+    <EditText
+        android:id="@+id/txtcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtshopname"
+        android:layout_marginTop="4dp"
+        android:inputType="phone"
+        android:background="@drawable/btn1"
+        android:hint="  Enter the contact" />
+
+    <EditText
+        android:id="@+id/txtcategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcontact"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn1"
+        android:hint="  Enter the Categories"
+
+        />
+    <EditText
+        android:id="@+id/txtmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcategories"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn1"
+        android:hint="  Enter the Mail"
+
+        />
+
+
+    <Button
+        android:id="@+id/btnsignup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtmail"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/btn"
+        android:text="Signup"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

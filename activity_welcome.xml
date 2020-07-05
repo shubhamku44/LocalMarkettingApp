@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="21dp"
+        android:text="Welcome to LocalMarketting! get anything at local market via this app."
+        android:textAlignment="center"
+        android:id="@+id/header"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="72dp"
+        android:text="LogIn or SignUp"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <EditText
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:inputType="phone"
+        android:hint="  Email or Phone"
+        android:background="@drawable/btn1"
+        android:textStyle="italic"
+        android:id="@+id/txtmail"/>
+
+    <EditText
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="  Password"
+        android:background="@drawable/btn1"
+        android:inputType="textPassword"
+        android:textStyle="italic"
+        android:id="@+id/txtpass"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="117dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/txtpass"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
+        android:text="Login/Users"
+       android:background="@drawable/button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="130dp" />
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="155dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="131dp"
+        android:background="@drawable/u" />
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="117dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/login"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
+        android:text="Login/Merchant"
+        android:textSize="10dp"
+       android:background="@drawable/button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="130dp" />
+
+
+    <Button
+        android:id="@+id/merchant"
+        android:layout_width="189dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/user"
+        android:layout_alignEnd="@+id/txtmail"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="-86dp"
+        android:layout_marginEnd="-7dp"
+        android:layout_toEndOf="@+id/user"
+        android:layout_toRightOf="@+id/user"
+        android:background="@drawable/mer"
+        android:layout_alignRight="@+id/txtmail"
+        android:layout_marginRight="-7dp" />
+
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginBottom="6dp"
+        android:text="Developer:- This App is Developed by Shubham Kumar "
+        android:textSize="10dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
